@@ -37,9 +37,13 @@ export default {
       type: 'string',
     },
     {
-      name: 'size',
-      title: 'Size',
-      type: 'string',
+      name: 'sizes',
+      title: 'Sizes',
+      type: 'array',
+      of: [{ type: 'string' }],
+      options: {
+        layout: 'tags',
+      }
     }
   ]
 }
